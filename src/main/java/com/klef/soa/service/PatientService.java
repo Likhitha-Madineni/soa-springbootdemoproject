@@ -12,7 +12,6 @@ public interface PatientService {
  Patient displayPatientById(Long id);
  String deletepatientById(Long id);
 List<Patient> displayPatientsByGender(String gender);
-	
-	
-	
+Long displayPatientCount();
+
 }
