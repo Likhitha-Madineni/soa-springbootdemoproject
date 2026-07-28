@@ -56,6 +56,7 @@ public class PatientServiceImpl implements PatientService{
 	@Override
 	public String deletepatientById(Long id) {
 		boolean status=repo.existsById(id);
+		
 		if(status) {
 			repo.deleteById(id);
 			return "Patient Deleted Successfully";
